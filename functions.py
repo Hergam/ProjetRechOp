@@ -71,16 +71,39 @@ def printt(message, numero_proposition=None):
         print(message)
         ecrire_trace(numero_proposition, str(message))
 
+def affichage_flot_max(matrice_originale, matrice_residuelle):
+    n = len(matrice_originale)
+    noms = generer_noms_sommets(n)
+    
+    # Afficher l'en-tête
+    en_tete = "Affichage du flot max :"
+    printt(en_tete)
+    en_tete = "    " + "  ".join(f"{nom:3}" for nom in noms)
+    printt(en_tete)
+    
+    # Pour chaque ligne
+    for i in range(n):
+        ligne = [f"{noms[i]:2} |"]
+        for j in range(n):
+            if matrice_originale[i][j] > 0:
+                flot = matrice_originale[i][j] - matrice_residuelle[i][j]
+                capacite = matrice_originale[i][j]
+                ligne.append(f"{flot}/{capacite}")
+            else:
+                ligne.append("0")
+        printt(" ".join(f"{val:4}" for val in ligne))
+
 def FF(matrice):
     n = len(matrice)
-    t_atteignable = True
-    while t_atteignable:
+    matrice_residuelle = matrice.copy()  # On travaille sur une copie
+    flot_total = 0
+    
+    while True:  # On continue tant qu'on trouve un chemin
         noms = generer_noms_sommets(n)
         visites = [False] * n
         precedent = [None] * n
         
         file = []
-        
         file.append(0)
         visites[0] = True
         printt("S")
@@ -91,7 +114,7 @@ def FF(matrice):
             predecesseurs = []
             
             for voisin in range(n):
-                if matrice[sommet][voisin] > 0 and not visites[voisin]:
+                if matrice_residuelle[sommet][voisin] > 0 and not visites[voisin]:
                     file.append(voisin)
                     visites[voisin] = True
                     precedent[voisin] = sommet
@@ -102,23 +125,40 @@ def FF(matrice):
                 msg = f"{','.join(sommets_visites)}; {'; '.join(predecesseurs)}"
                 printt(msg)
 
-        # Reconstruction du chemin
+        # Si on ne peut plus atteindre t, on arrête
         if not visites[n-1]:
-            t_atteignable = False
+            printt("Aucun chemin trouvé vers t, fin de l'algorithme.")
+            break
             
         chemin = []
         sommet = n-1
         while sommet is not None:
             chemin.append(sommet)
             sommet = precedent[sommet]
+        chemin = chemin[::-1]
+
+        # Calcul du flot minimal sur le chemin
+        flot = float('inf')
+        for i in range(len(chemin)-1):
+            u = chemin[i]
+            v = chemin[i+1]
+            if matrice_residuelle[u][v] < flot:
+                flot = matrice_residuelle[u][v]
         
+        # Mise à jour du graphe résiduel
+        for i in range(len(chemin)-1):
+            u = chemin[i]
+            v = chemin[i+1]
+            matrice_residuelle[u][v] -= flot
+            matrice_residuelle[v][u] += flot
+        
+        flot_total += flot
+        printt(f"Chemin trouvé : {chemin} de flot {flot}")
+        printt(f"Flot total actuel : {flot_total}")
 
-        flot = 0
-
-        for i,sommet in enumerate(chemin[:-1][::-1]):
-            flot += matrice[sommet][chemin[i+1]]
-        printt(f"Chemin trouvé : {chemin[::-1]} de flot {flot}")
-
-    return chemin[::-1]
+    
+    affichage_flot_max(matrice, matrice_residuelle)
+    printt(f"Valeur du flot max = {flot_total}")
+    return flot_total
 
 

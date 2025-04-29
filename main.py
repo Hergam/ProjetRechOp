@@ -14,5 +14,4 @@ except FileNotFoundError:
     message_erreur = f"Fichier de proposition 'proposal_{numero_proposition}.txt' introuvable."
     printt(f"ERREUR : {message_erreur}")
 
-chemin = FF(matrice_graphe)
-printt(chemin)
+matriceFF = FF(matrice_graphe)
