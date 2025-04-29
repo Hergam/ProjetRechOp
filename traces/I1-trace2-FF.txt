@@ -1,0 +1,18 @@
+Matrice du graphe pour la proposition 2 :
+    s   a   b   c   d   e   f   g   h   t 
+s  | 0  16   3   8   0   0   0   0   0   0
+a  | 0   0   0   0   0   0   0   0   7   0
+b  | 0   0   0   7   0   5   0   0   0   0
+c  | 0   0   0   0   0   0   0   0   7   0
+d  | 0   0   0   0   0   0   1   8   0   0
+e  | 0   0   0   0   8   0   0   0   0   0
+f  | 0   0   0   0   0   0   0   0   0   8
+g  | 0   0   0   0   0   0   0   0   4   6
+h  | 0   0   0   0   0   4   0   0   0   8
+t  | 0   0   0   0   0   0   0   0   0   0
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+h; Pre(h)=a
+e; Pre(e)=b
+t; Pre(t)=h
+[0, 1, 8, 9]

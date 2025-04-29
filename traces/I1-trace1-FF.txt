@@ -1,0 +1,2689 @@
+Matrice du graphe pour la proposition 1 :
+    s   a   b   c   d   e   f   t 
+s  | 0   9   5   7   0   0   0   0
+a  | 0   0   6   0   6   0   0   0
+b  | 0   0   0   0   0   7   0   0
+c  | 0   0   0   0   0   2   8   0
+d  | 0   0   3   0   0   0   0   8
+e  | 0   0   0   0   0   0   0  10
+f  | 0   0   0   0   0   3   0   5
+t  | 0   0   0   0   0   0   0   0
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 7] de flot 6
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=b
+f; Pre(f)=c
