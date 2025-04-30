@@ -1,0 +1,85 @@
+Matrice de capacité pour la proposition 6 :
+     s   a   b   c   d   t 
+s  | 0   4   2   0   0   0
+a  | 0   0   0   4   0   1
+b  | 0   0   0   4   2   0
+c  | 0   0   0   0   2   2
+d  | 0   0   0   0   0   2
+t  | 0   0   0   0   0   0
+
+Matrice de coût pour la proposition 6 :
+     s   a   b   c   d   t 
+s  | 0   3   1   0   0   0
+a  | 0   0   0   2   0   4
+b  | 0   0   0   1   5   0
+c  | 0   0   0   0   3   1
+d  | 0   0   0   0   0   6
+t  | 0   0   0   0   0   0
+
+Exécution de l'algorithme de Bellman-Ford:
+k      s     a     b     c     d     t  
+0 |    0   inf   inf   inf   inf   inf   
+1 |    0     3     1   inf   inf   inf   
+2 |    0     3     1     5   inf     7   
+3 |    0     3     1     5     8     6   
+4 |    0     3     1     5     8     6   
+Aucune modification pendant l'itération 4, fin de Bellman-Ford.
+Plus court chemin: s -> a -> c -> t de coût 6
+
+Flot trouvé: 2 avec coût 12
+Flot total actuel: 2 avec coût total 12
+
+Affichage du graphe résiduel :
+     s    a    b    c    d    t  
+s  | 0    2/4  0/2  0    0    0   
+a  | 0    0    0    2/4  0    0/1 
+b  | 0    0    0    0/4  0/2  0   
+c  | 0    0    0    0    0/2  2/2 
+d  | 0    0    0    0    0    0/2 
+t  | 0    0    0    0    0    0   
+
+Exécution de l'algorithme de Bellman-Ford:
+k      s     a     b     c     d     t  
+0 |    0   inf   inf   inf   inf   inf   
+1 |    0     3     1   inf   inf   inf   
+2 |    0     3     1     5   inf     7   
+3 |    0     3     1     5     8     7   
+4 |    0     3     1     5     8     7   
+Aucune modification pendant l'itération 4, fin de Bellman-Ford.
+Plus court chemin: s -> a -> t de coût 7
+
+Flot trouvé: 1 avec coût 7
+Flot total actuel: 3 avec coût total 19
+
+Affichage du graphe résiduel :
+     s    a    b    c    d    t  
+s  | 0    3/4  0/2  0    0    0   
+a  | 0    0    0    2/4  0    1/1 
+b  | 0    0    0    0/4  0/2  0   
+c  | 0    0    0    0    0/2  2/2 
+d  | 0    0    0    0    0    0/2 
+t  | 0    0    0    0    0    0   
+
+Exécution de l'algorithme de Bellman-Ford:
+k      s     a     b     c     d     t  
+0 |    0   inf   inf   inf   inf   inf   
+1 |    0     3     1   inf   inf   inf   
+2 |    0     3     1     5   inf   inf   
+3 |    0     3     1     5     8   inf   
+4 |    0     3     1     5     8    14   
+5 |    0     3     1     5     8    14   
+Aucune modification pendant l'itération 5, fin de Bellman-Ford.
+Plus court chemin: s -> a -> c -> d -> t de coût 14
+
+Flot trouvé: 1 avec coût 14
+Flot total actuel: 4 avec coût total 33
+
+Affichage du graphe résiduel :
+     s    a    b    c    d    t  
+s  | 0    4/4  0/2  0    0    0   
+a  | 0    0    0    3/4  0    1/1 
+b  | 0    0    0    0/4  0/2  0   
+c  | 0    0    0    0    1/2  2/2 
+d  | 0    0    0    0    0    1/2 
+t  | 0    0    0    0    0    0   
+Flot recherché atteint ou dépassé, fin de l'algorithme.

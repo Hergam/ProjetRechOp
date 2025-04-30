@@ -41,8 +41,3 @@ while True:
         flotCoutMin(matrice_cout, matrice_capacite, flot_recherche) 
     else:
         printt("Algorithme non valide ou matrice de coût non disponible pour cette proposition")
-
-    restart = input("\nVoulez-vous relancer une nouvelle exécution ? (o/n) : ")
-    if restart.lower() != "o":
-        print("Fin du programme.")
-        break

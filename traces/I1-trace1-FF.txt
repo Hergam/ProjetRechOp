@@ -1,4 +1,4 @@
-Matrice de capacitÃ© pour la proposition 1 :
+Matrice de capacité pour la proposition 1 :
      s   a   b   c   d   e   f   t 
 s  | 0   9   5   7   0   0   0   0
 a  | 0   0   6   0   6   0   0   0
@@ -15,7 +15,7 @@ d; Pre(d)=a
 e; Pre(e)=b
 f; Pre(f)=c
 t; Pre(t)=d
-Chemin trouvÃ© : [0, 1, 4, 7] de flot 6
+Chemin trouvé : [0, 1, 4, 7] de flot 6
 Flot total actuel : 6
 
 S
@@ -23,7 +23,7 @@ a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
 e; Pre(e)=b
 f; Pre(f)=c
 t; Pre(t)=e
-Chemin trouvÃ© : [0, 2, 5, 7] de flot 5
+Chemin trouvé : [0, 2, 5, 7] de flot 5
 Flot total actuel : 11
 
 S
@@ -31,7 +31,7 @@ a,c; Pre(a)=s; Pre(c)=s
 b; Pre(b)=a
 e,f; Pre(e)=c; Pre(f)=c
 t; Pre(t)=e
-Chemin trouvÃ© : [0, 3, 5, 7] de flot 2
+Chemin trouvé : [0, 3, 5, 7] de flot 2
 Flot total actuel : 13
 
 S
@@ -40,7 +40,7 @@ b; Pre(b)=a
 f; Pre(f)=c
 e; Pre(e)=b
 t; Pre(t)=f
-Chemin trouvÃ© : [0, 3, 6, 7] de flot 5
+Chemin trouvé : [0, 3, 6, 7] de flot 5
 Flot total actuel : 18
 
 S
@@ -48,13 +48,13 @@ a; Pre(a)=s
 b; Pre(b)=a
 e; Pre(e)=b
 c,t; Pre(c)=e; Pre(t)=e
-Chemin trouvÃ© : [0, 1, 2, 5, 7] de flot 2
+Chemin trouvé : [0, 1, 2, 5, 7] de flot 2
 Flot total actuel : 20
 
 S
 a; Pre(a)=s
 b; Pre(b)=a
-Aucun chemin trouvÃ© vers t, fin de l'algorithme.
+Aucun chemin trouvé vers t, fin de l'algorithme.
 
 Affichage du flot max :
      s    a    b    c    d    e    f    t  

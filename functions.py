@@ -96,7 +96,7 @@ def affichage_flot_max(matrice_originale, matrice_residuelle):
     noms = generer_noms_sommets(n)
     
     # Afficher l'en-tête
-    en_tete = "\nAffichage du flot max :"
+    en_tete = "\nAffichage du graphe résiduel :"
     printt(en_tete)
     en_tete = "     " + "  ".join(f"{nom:3}" for nom in noms)
     printt(en_tete)
@@ -321,7 +321,6 @@ def bellman_ford(matrice_cout):
     for sommet in chemin:
         strChemin.append(noms_sommets[sommet])
     
-    printt("\n")
     if distance[n-1] == float('inf'):
         printt(f"Plus court chemin: {strChemin[-1]}")
     else:
@@ -342,10 +341,9 @@ def flotCoutMin(matriceCout, matriceCapacite, flotRecherche):
     while True:
         chemin, cout = bellman_ford(matriceCo)
         if cout == float('inf'):
-            printt("Pas de chemin trouvé, flot demandé inatteignable, fin de l'algorithme.")
+            printt("Pas de chemin trouvé, flot demandé inatteignable, fin de l'algorithme.\n")
             break
         flot_chemin = min(matriceCap[chemin[i]][chemin[i+1]] for i in range(len(chemin)-1))
-        printt(matriceCo)
         for i in range(len(chemin)-1):
             u = chemin[i]
             v = chemin[i+1]
@@ -361,17 +359,16 @@ def flotCoutMin(matriceCout, matriceCapacite, flotRecherche):
             if matriceCap[v][u] > 0:
                 matriceCo[v][u] = -matriceCo[u][v]
         
-        
         cout_flot = cout * flot_chemin
         flot_total += flot_chemin
         cout_total += cout_flot
 
-        printt(f"Flot trouvé: {flot_chemin} avec coût {cout_flot}")
+        printt(f"\nFlot trouvé: {flot_chemin} avec coût {cout_flot}")
         printt(f"Flot total actuel: {flot_total} avec coût total {cout_total}")
-
-
+        affichage_flot_max(matriceCapacite, matriceCap)
         if flot_total >= flotRecherche:
             printt("Flot recherché atteint ou dépassé, fin de l'algorithme.")
+            
             break
 
 
