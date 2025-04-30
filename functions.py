@@ -1,20 +1,40 @@
 import numpy as np
 import os
-
+import copy
+import time
 # Variables globales
 _traces_reinitialisees = set()
 _current_proposal = None  # Stocke le numéro de proposition courante
+
+# Ajout d'une variable globale pour le choix d'algorithme
+algo = None
 
 def set_current_proposal(num):
     global _current_proposal
     _current_proposal = num
 
+def set_algo(choice):
+    global algo
+    algo = choice
+
+def get_algo():
+    return algo
+
 def lire_matrice_graphe(n):
     nom_fichier = f"proposals/proposal_{n}.txt"
     with open(nom_fichier, 'r') as fichier:
-        nbrSommet = int(fichier.readline().strip())  # Lit la première ligne dans nbrSommet
-        matrice = [list(map(int, ligne.strip().split())) for ligne in fichier]
-    return np.array(matrice), nbrSommet
+        nbrSommet = int(fichier.readline().strip())
+        lignes = [list(map(int, ligne.strip().split())) for ligne in fichier]
+        
+        # Séparer la matrice en deux si elle contient les coûts (propositions > 5)
+        if int(n) > 5:
+            matrice_capacite = np.array(lignes[:nbrSommet])
+            matrice_cout = np.array(lignes[nbrSommet:])
+        else:
+            matrice_capacite = np.array(lignes)
+            matrice_cout = None
+            
+    return matrice_capacite, matrice_cout, nbrSommet
 
 def ecrire_trace(numero_proposition, message):
     global _traces_reinitialisees
@@ -23,7 +43,7 @@ def ecrire_trace(numero_proposition, message):
     if not os.path.exists("traces"):
         os.makedirs("traces")
     
-    nom_fichier = f"traces/I1-trace{numero_proposition}-FF.txt"
+    nom_fichier = f"traces/I1-trace{numero_proposition}-{algo}.txt"
     
     # Si c'est la première écriture pour cette proposition dans cette exécution
     if numero_proposition not in _traces_reinitialisees:
@@ -228,5 +248,130 @@ def push_relabel(matrice):
     
     affichage_flot_max(matrice, residual)
     return max_flow
+
+def bellman_ford(matrice_cout):
+    n = len(matrice_cout)
+    source = 0  # sommet s
+    
+    # Initialisation
+    distance = [float('inf')] * n
+    predecesseur = [None] * n
+    distance[source] = 0
+    
+    printt("\nExécution de l'algorithme de Bellman-Ford:")
+    
+    # Afficher l'état initial
+    noms_sommets = generer_noms_sommets(n)
+    
+    # En-tête avec les noms des sommets
+    en_tete = "k      " + "   ".join(f"{nom:3}" for nom in noms_sommets)
+    printt(en_tete)
+    
+    # Première ligne avec les distances initiales
+    ligne = "0 |  "
+    for d in distance:
+        if d == float('inf'):
+            ligne += "inf   "
+        else:
+            ligne += f"{d:3}   "
+    printt(ligne)
+    
+    # Relaxation des arcs
+    file = []
+    file.append(source)
+    for k in range(n):
+        next_file = []
+        modified = False
+        
+        for u in file:
+            for v in range(n):
+                if matrice_cout[u][v] != 0:  # s'il existe un arc
+                    if distance[v] > distance[u] + matrice_cout[u][v]:
+                        modified = True
+                        distance[v] = distance[u] + matrice_cout[u][v]
+                        predecesseur[v] = u
+                        next_file.append(v)
+            if u in file:
+                file.remove(u)
+        
+        
+        file = next_file
+
+        # Afficher la ligne des distances actuelles
+        ligne = f"{k+1} |  "
+        for d in distance:
+            if d == float('inf'):
+                ligne += "inf   "
+            else:
+                ligne += f"{d:3}   "
+        printt(ligne)
+
+        if not modified:
+            printt(f"Aucune modification pendant l'itération {k+1}, fin de Bellman-Ford.")
+            break
+    
+    # Reconstruction du plus court chemin vers t
+    chemin = []
+    sommet = n-1  # sommet t
+    while sommet is not None:
+        chemin.append(sommet)
+        sommet = predecesseur[sommet]
+    chemin = chemin[::-1]  # inverse le chemin pour avoir s->t
+    strChemin = []
+    for sommet in chemin:
+        strChemin.append(noms_sommets[sommet])
+    
+    printt("\n")
+    if distance[n-1] == float('inf'):
+        printt(f"Plus court chemin: {strChemin[-1]}")
+    else:
+        printt(f"Plus court chemin: {' -> '.join(strChemin)} de coût {distance[n-1]}")
+    
+    return chemin, distance[n-1]
+
+def flotCoutMin(matriceCout, matriceCapacite, flotRecherche):
+    
+    flotRecherche = int(flotRecherche)
+        
+    flot_total = 0
+    cout_total = 0
+    n = len(matriceCapacite)
+    matriceCap = copy.deepcopy(matriceCapacite)
+    matriceCo = copy.deepcopy(matriceCout)
+    
+    while True:
+        chemin, cout = bellman_ford(matriceCo)
+        if cout == float('inf'):
+            printt("Pas de chemin trouvé, flot demandé inatteignable, fin de l'algorithme.")
+            break
+        flot_chemin = min(matriceCap[chemin[i]][chemin[i+1]] for i in range(len(chemin)-1))
+        printt(matriceCo)
+        for i in range(len(chemin)-1):
+            u = chemin[i]
+            v = chemin[i+1]
+            
+            matriceCap[u][v] -= flot_chemin
+            matriceCap[v][u] += flot_chemin
+            if matriceCap[u][v] == 0:
+                matriceCo[u][v] = 0
+
+            if matriceCap[v][u] == 0:
+                matriceCo[v][u] = 0
+
+            if matriceCap[v][u] > 0:
+                matriceCo[v][u] = -matriceCo[u][v]
+        
+        
+        cout_flot = cout * flot_chemin
+        flot_total += flot_chemin
+        cout_total += cout_flot
+
+        printt(f"Flot trouvé: {flot_chemin} avec coût {cout_flot}")
+        printt(f"Flot total actuel: {flot_total} avec coût total {cout_total}")
+
+
+        if flot_total >= flotRecherche:
+            printt("Flot recherché atteint ou dépassé, fin de l'algorithme.")
+            break
 
 
