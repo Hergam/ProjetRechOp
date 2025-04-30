@@ -14,4 +14,9 @@ except FileNotFoundError:
     message_erreur = f"Fichier de proposition 'proposal_{numero_proposition}.txt' introuvable."
     printt(f"ERREUR : {message_erreur}")
 
-matriceFF = FF(matrice_graphe)
+algo = input("Choisissez l'algorithme (1: Ford-Fulkerson, 2: Push-Relabel) : ")
+
+if algo == "1":
+    matriceFF = FF(matrice_graphe)
+else:
+    matricePR = push_relabel(matrice_graphe)

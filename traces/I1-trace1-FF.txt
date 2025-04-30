@@ -1,5 +1,5 @@
 Matrice du graphe pour la proposition 1 :
-    s   a   b   c   d   e   f   t 
+     s   a   b   c   d   e   f   t 
 s  | 0   9   5   7   0   0   0   0
 a  | 0   0   6   0   6   0   0   0
 b  | 0   0   0   0   0   7   0   0
@@ -8,49 +8,42 @@ d  | 0   0   3   0   0   0   0   8
 e  | 0   0   0   0   0   0   0  10
 f  | 0   0   0   0   0   3   0   5
 t  | 0   0   0   0   0   0   0   0
-S
-a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
-d; Pre(d)=a
-e; Pre(e)=b
-f; Pre(f)=c
-t; Pre(t)=d
-Chemin trouvé : [0, 1, 4, 7] de flot 6
-Flot total actuel : 6
-S
-a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
-e; Pre(e)=b
-f; Pre(f)=c
-t; Pre(t)=e
-Chemin trouvé : [0, 2, 5, 7] de flot 5
-Flot total actuel : 11
-S
-a,c; Pre(a)=s; Pre(c)=s
-b; Pre(b)=a
-e,f; Pre(e)=c; Pre(f)=c
-t; Pre(t)=e
-Chemin trouvé : [0, 3, 5, 7] de flot 2
-Flot total actuel : 13
-S
-a,c; Pre(a)=s; Pre(c)=s
-b; Pre(b)=a
-f; Pre(f)=c
-e; Pre(e)=b
-t; Pre(t)=f
-Chemin trouvé : [0, 3, 6, 7] de flot 5
-Flot total actuel : 18
-S
-a; Pre(a)=s
-b; Pre(b)=a
-e; Pre(e)=b
-c,t; Pre(c)=e; Pre(t)=e
-Chemin trouvé : [0, 1, 2, 5, 7] de flot 2
-Flot total actuel : 20
-S
-a; Pre(a)=s
-b; Pre(b)=a
-Aucun chemin trouvé vers t, fin de l'algorithme.
+Relabel a à hauteur 1
+Push 6 unités de a vers b
+Push 3 unités de a vers d
+Relabel b à hauteur 1
+Push 7 unités de b vers e
+Relabel b à hauteur 2
+Push 4 unités de b vers a
+Push 3 unités de a vers d
+Relabel a à hauteur 3
+Push 1 unités de a vers b
+Relabel b à hauteur 4
+Push 1 unités de b vers a
+Relabel a à hauteur 5
+Push 1 unités de a vers b
+Relabel b à hauteur 6
+Push 1 unités de b vers a
+Relabel a à hauteur 7
+Push 1 unités de a vers b
+Relabel b à hauteur 8
+Push 1 unités de b vers a
+Relabel a à hauteur 9
+Push 1 unités de a vers s
+Relabel c à hauteur 1
+Push 2 unités de c vers e
+Push 5 unités de c vers f
+Relabel d à hauteur 1
+Push 6 unités de d vers t
+Relabel e à hauteur 1
+Push 9 unités de e vers t
+Relabel f à hauteur 1
+Push 5 unités de f vers t
+
+Valeur du flot max = 20
+
 Affichage du flot max :
-    s    a    b    c    d    e    f    t  
+     s    a    b    c    d    e    f    t  
 s  | 0    8/9  5/5  7/7  0    0    0    0   
 a  | 0    0    2/6  0    6/6  0    0    0   
 b  | 0    0    0    0    0    7/7  0    0   
@@ -59,4 +52,3 @@ d  | 0    0    0/3  0    0    0    0    6/8
 e  | 0    0    0    0    0    0    0    9/10
 f  | 0    0    0    0    0    0/3  0    5/5 
 t  | 0    0    0    0    0    0    0    0   
-Valeur du flot max = 20
