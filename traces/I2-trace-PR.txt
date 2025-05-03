@@ -1,13 +1,4 @@
-Matrice de capacité pour la proposition 1 :
-     s   a   b   c   d   e   f   t 
-s  | 0   9   5   7   0   0   0   0
-a  | 0   0   6   0   6   0   0   0
-b  | 0   0   0   0   0   7   0   0
-c  | 0   0   0   0   0   2   8   0
-d  | 0   0   3   0   0   0   0   8
-e  | 0   0   0   0   0   0   0  10
-f  | 0   0   0   0   0   3   0   5
-t  | 0   0   0   0   0   0   0   0
+ERREUR : Fichier de proposition 'proposal_.txt' introuvable.
 
 Réétiqueter a à hauteur 1
 Pousser 6 unités de a vers b
@@ -56,7 +47,7 @@ Pousser 5 unités de f vers t
 
 Valeur du flot max = 20
 
-Affichage du flot max :
+Affichage du graphe résiduel :
      s    a    b    c    d    e    f    t  
 s  | 0    8/9  5/5  7/7  0    0    0    0   
 a  | 0    0    2/6  0    6/6  0    0    0   

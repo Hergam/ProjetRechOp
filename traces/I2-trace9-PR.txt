@@ -1,0 +1,321 @@
+Matrice de capacité pour la proposition 9 :
+     s   a   b   c   d   t 
+s  | 0  15   8   0   0   0
+a  | 0   0  20   4  10   0
+b  | 0   0   0  15   4   0
+c  | 0   0   0   0  20   5
+d  | 0   0   5   0   0  15
+t  | 0   0   0   0   0   0
+
+Matrice de coût pour la proposition 9 :
+     s   a   b   c   d   t 
+s  | .   4   4   .   .   .
+a  | .   .   2   2   6   .
+b  | .   .   .   1   3   .
+c  | .   .   .   .   2   0
+d  | .   .   3   .   .   0
+t  | .   .   .   .   .   .
+
+
+Pousser 15 unités de s vers a
+Pousser 8 unités de s vers b
+
+Affichage du graphe résiduel :
+     s    a    b    c    d    t  
+s  | 0    15/15 8/8  0    0    0   
+a  | 0    0    0/20 0/4  0/10 0   
+b  | 0    0    0    0/15 0/4  0   
+c  | 0    0    0    0    0/20 0/5 
+d  | 0    0    0/5  0    0    0/15
+t  | 0    0    0    0    0    0   
+
+Réétiqueter a à hauteur 1
+
+Pousser 15 unités de a vers b
+
+Affichage du graphe résiduel :
+     s    a    b    c    d    t  
+s  | 0    15/15 8/8  0    0    0   
+a  | 0    0    15/20 0/4  0/10 0   
+b  | 0    0    0    0/15 0/4  0   
+c  | 0    0    0    0    0/20 0/5 
+d  | 0    0    0/5  0    0    0/15
+t  | 0    0    0    0    0    0   
+
+Réétiqueter b à hauteur 1
+
+Pousser 15 unités de b vers c
+
+Affichage du graphe résiduel :
+     s    a    b    c    d    t  
+s  | 0    15/15 8/8  0    0    0   
+a  | 0    0    15/20 0/4  0/10 0   
+b  | 0    0    0    15/15 0/4  0   
+c  | 0    0    0    0    0/20 0/5 
+d  | 0    0    0/5  0    0    0/15
+t  | 0    0    0    0    0    0   
+
+Pousser 4 unités de b vers d
+
+Affichage du graphe résiduel :
+     s    a    b    c    d    t  
+s  | 0    15/15 8/8  0    0    0   
+a  | 0    0    15/20 0/4  0/10 0   
+b  | 0    0    0    15/15 4/4  0   
+c  | 0    0    0    0    0/20 0/5 
+d  | 0    0    -4/5 0    0    0/15
+t  | 0    0    0    0    0    0   
+
+Réétiqueter b à hauteur 2
+
+Pousser 4 unités de b vers a
+
+Affichage du graphe résiduel :
+     s    a    b    c    d    t  
+s  | 0    15/15 8/8  0    0    0   
+a  | 0    0    11/20 0/4  0/10 0   
+b  | 0    0    0    15/15 4/4  0   
+c  | 0    0    0    0    0/20 0/5 
+d  | 0    0    -4/5 0    0    0/15
+t  | 0    0    0    0    0    0   
+
+Pousser 4 unités de a vers c
+
+Affichage du graphe résiduel :
+     s    a    b    c    d    t  
+s  | 0    15/15 8/8  0    0    0   
+a  | 0    0    11/20 4/4  0/10 0   
+b  | 0    0    0    15/15 4/4  0   
+c  | 0    0    0    0    0/20 0/5 
+d  | 0    0    -4/5 0    0    0/15
+t  | 0    0    0    0    0    0   
+
+Réétiqueter c à hauteur 1
+
+Pousser 19 unités de c vers d
+
+Affichage du graphe résiduel :
+     s    a    b    c    d    t  
+s  | 0    15/15 8/8  0    0    0   
+a  | 0    0    11/20 4/4  0/10 0   
+b  | 0    0    0    15/15 4/4  0   
+c  | 0    0    0    0    19/20 0/5 
+d  | 0    0    -4/5 0    0    0/15
+t  | 0    0    0    0    0    0   
+
+Réétiqueter d à hauteur 1
+
+Pousser 15 unités de d vers t
+
+Affichage du graphe résiduel :
+     s    a    b    c    d    t  
+s  | 0    15/15 8/8  0    0    0   
+a  | 0    0    11/20 4/4  0/10 0   
+b  | 0    0    0    15/15 4/4  0   
+c  | 0    0    0    0    19/20 0/5 
+d  | 0    0    -4/5 0    0    15/15
+t  | 0    0    0    0    0    0   
+
+Réétiqueter d à hauteur 2
+
+Pousser 8 unités de d vers c
+
+Affichage du graphe résiduel :
+     s    a    b    c    d    t  
+s  | 0    15/15 8/8  0    0    0   
+a  | 0    0    11/20 4/4  0/10 0   
+b  | 0    0    0    15/15 4/4  0   
+c  | 0    0    0    0    11/20 0/5 
+d  | 0    0    -4/5 0    0    15/15
+t  | 0    0    0    0    0    0   
+
+Pousser 5 unités de c vers t
+
+Affichage du graphe résiduel :
+     s    a    b    c    d    t  
+s  | 0    15/15 8/8  0    0    0   
+a  | 0    0    11/20 4/4  0/10 0   
+b  | 0    0    0    15/15 4/4  0   
+c  | 0    0    0    0    11/20 5/5 
+d  | 0    0    -4/5 0    0    15/15
+t  | 0    0    0    0    0    0   
+
+Réétiqueter c à hauteur 2
+
+Pousser 3 unités de c vers a
+
+Affichage du graphe résiduel :
+     s    a    b    c    d    t  
+s  | 0    15/15 8/8  0    0    0   
+a  | 0    0    11/20 1/4  0/10 0   
+b  | 0    0    0    15/15 4/4  0   
+c  | 0    0    0    0    11/20 5/5 
+d  | 0    0    -4/5 0    0    15/15
+t  | 0    0    0    0    0    0   
+
+Réétiqueter a à hauteur 3
+
+Pousser 3 unités de a vers b
+
+Affichage du graphe résiduel :
+     s    a    b    c    d    t  
+s  | 0    15/15 8/8  0    0    0   
+a  | 0    0    14/20 1/4  0/10 0   
+b  | 0    0    0    15/15 4/4  0   
+c  | 0    0    0    0    11/20 5/5 
+d  | 0    0    -4/5 0    0    15/15
+t  | 0    0    0    0    0    0   
+
+Réétiqueter b à hauteur 4
+
+Pousser 3 unités de b vers a
+
+Affichage du graphe résiduel :
+     s    a    b    c    d    t  
+s  | 0    15/15 8/8  0    0    0   
+a  | 0    0    11/20 1/4  0/10 0   
+b  | 0    0    0    15/15 4/4  0   
+c  | 0    0    0    0    11/20 5/5 
+d  | 0    0    -4/5 0    0    15/15
+t  | 0    0    0    0    0    0   
+
+Pousser 3 unités de a vers c
+
+Affichage du graphe résiduel :
+     s    a    b    c    d    t  
+s  | 0    15/15 8/8  0    0    0   
+a  | 0    0    11/20 4/4  0/10 0   
+b  | 0    0    0    15/15 4/4  0   
+c  | 0    0    0    0    11/20 5/5 
+d  | 0    0    -4/5 0    0    15/15
+t  | 0    0    0    0    0    0   
+
+Réétiqueter c à hauteur 3
+
+Pousser 3 unités de c vers d
+
+Affichage du graphe résiduel :
+     s    a    b    c    d    t  
+s  | 0    15/15 8/8  0    0    0   
+a  | 0    0    11/20 4/4  0/10 0   
+b  | 0    0    0    15/15 4/4  0   
+c  | 0    0    0    0    14/20 5/5 
+d  | 0    0    -4/5 0    0    15/15
+t  | 0    0    0    0    0    0   
+
+Réétiqueter d à hauteur 4
+
+Pousser 3 unités de d vers c
+
+Affichage du graphe résiduel :
+     s    a    b    c    d    t  
+s  | 0    15/15 8/8  0    0    0   
+a  | 0    0    11/20 4/4  0/10 0   
+b  | 0    0    0    15/15 4/4  0   
+c  | 0    0    0    0    11/20 5/5 
+d  | 0    0    -4/5 0    0    15/15
+t  | 0    0    0    0    0    0   
+
+Réétiqueter c à hauteur 4
+
+Pousser 3 unités de c vers a
+
+Affichage du graphe résiduel :
+     s    a    b    c    d    t  
+s  | 0    15/15 8/8  0    0    0   
+a  | 0    0    11/20 1/4  0/10 0   
+b  | 0    0    0    15/15 4/4  0   
+c  | 0    0    0    0    11/20 5/5 
+d  | 0    0    -4/5 0    0    15/15
+t  | 0    0    0    0    0    0   
+
+Réétiqueter a à hauteur 5
+
+Pousser 3 unités de a vers b
+
+Affichage du graphe résiduel :
+     s    a    b    c    d    t  
+s  | 0    15/15 8/8  0    0    0   
+a  | 0    0    14/20 1/4  0/10 0   
+b  | 0    0    0    15/15 4/4  0   
+c  | 0    0    0    0    11/20 5/5 
+d  | 0    0    -4/5 0    0    15/15
+t  | 0    0    0    0    0    0   
+
+Réétiqueter b à hauteur 6
+
+Pousser 3 unités de b vers a
+
+Affichage du graphe résiduel :
+     s    a    b    c    d    t  
+s  | 0    15/15 8/8  0    0    0   
+a  | 0    0    11/20 1/4  0/10 0   
+b  | 0    0    0    15/15 4/4  0   
+c  | 0    0    0    0    11/20 5/5 
+d  | 0    0    -4/5 0    0    15/15
+t  | 0    0    0    0    0    0   
+
+Pousser 3 unités de a vers c
+
+Affichage du graphe résiduel :
+     s    a    b    c    d    t  
+s  | 0    15/15 8/8  0    0    0   
+a  | 0    0    11/20 4/4  0/10 0   
+b  | 0    0    0    15/15 4/4  0   
+c  | 0    0    0    0    11/20 5/5 
+d  | 0    0    -4/5 0    0    15/15
+t  | 0    0    0    0    0    0   
+
+Réétiqueter c à hauteur 5
+
+Pousser 3 unités de c vers d
+
+Affichage du graphe résiduel :
+     s    a    b    c    d    t  
+s  | 0    15/15 8/8  0    0    0   
+a  | 0    0    11/20 4/4  0/10 0   
+b  | 0    0    0    15/15 4/4  0   
+c  | 0    0    0    0    14/20 5/5 
+d  | 0    0    -4/5 0    0    15/15
+t  | 0    0    0    0    0    0   
+
+Réétiqueter d à hauteur 6
+
+Pousser 3 unités de d vers c
+
+Affichage du graphe résiduel :
+     s    a    b    c    d    t  
+s  | 0    15/15 8/8  0    0    0   
+a  | 0    0    11/20 4/4  0/10 0   
+b  | 0    0    0    15/15 4/4  0   
+c  | 0    0    0    0    11/20 5/5 
+d  | 0    0    -4/5 0    0    15/15
+t  | 0    0    0    0    0    0   
+
+Réétiqueter c à hauteur 6
+
+Pousser 3 unités de c vers a
+
+Affichage du graphe résiduel :
+     s    a    b    c    d    t  
+s  | 0    15/15 8/8  0    0    0   
+a  | 0    0    11/20 1/4  0/10 0   
+b  | 0    0    0    15/15 4/4  0   
+c  | 0    0    0    0    11/20 5/5 
+d  | 0    0    -4/5 0    0    15/15
+t  | 0    0    0    0    0    0   
+
+Réétiqueter a à hauteur 7
+
+Pousser 3 unités de a vers s
+
+Affichage du graphe résiduel :
+     s    a    b    c    d    t  
+s  | 0    12/15 8/8  0    0    0   
+a  | 0    0    11/20 1/4  0/10 0   
+b  | 0    0    0    15/15 4/4  0   
+c  | 0    0    0    0    11/20 5/5 
+d  | 0    0    -4/5 0    0    15/15
+t  | 0    0    0    0    0    0   
+
+Valeur du flot max = 20

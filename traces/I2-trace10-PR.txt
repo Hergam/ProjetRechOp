@@ -1,0 +1,181 @@
+Matrice de capacité pour la proposition 10 :
+     s   a   b   c   d   e   t 
+s  | 0  150  150   0   0   0   0
+a  | 0   0   0  120  100   0   0
+b  | 0   0   0   0  100  120   0
+c  | 0   0   0   0   0   0  150
+d  | 0   0   0  50   0   0  80
+e  | 0   0   0   0  50   0  150
+t  | 0   0   0   0   0   0   0
+
+Matrice de coût pour la proposition 10 :
+     s   a   b   c   d   e   t 
+s  | .   2   3   .   .   .   .
+a  | .   .   .   4   1   .   .
+b  | .   .   .   .   2   5   .
+c  | .   .   .   .   .   .   3
+d  | .   .   .   6   .   .   3
+e  | .   .   .   .   8   .   4
+t  | .   .   .   .   .   .   .
+
+
+Pousser 150 unités de s vers a
+Pousser 150 unités de s vers b
+
+Affichage du graphe résiduel :
+     s    a    b    c    d    e    t  
+s  | 0    150/150 150/150 0    0    0    0   
+a  | 0    0    0    0/120 0/100 0    0   
+b  | 0    0    0    0    0/100 0/120 0   
+c  | 0    0    0    0    0    0    0/150
+d  | 0    0    0    0/50 0    0    0/80
+e  | 0    0    0    0    0/50 0    0/150
+t  | 0    0    0    0    0    0    0   
+
+Réétiqueter a à hauteur 1
+
+Pousser 120 unités de a vers c
+
+Affichage du graphe résiduel :
+     s    a    b    c    d    e    t  
+s  | 0    150/150 150/150 0    0    0    0   
+a  | 0    0    0    120/120 0/100 0    0   
+b  | 0    0    0    0    0/100 0/120 0   
+c  | 0    0    0    0    0    0    0/150
+d  | 0    0    0    0/50 0    0    0/80
+e  | 0    0    0    0    0/50 0    0/150
+t  | 0    0    0    0    0    0    0   
+
+Pousser 30 unités de a vers d
+
+Affichage du graphe résiduel :
+     s    a    b    c    d    e    t  
+s  | 0    150/150 150/150 0    0    0    0   
+a  | 0    0    0    120/120 30/100 0    0   
+b  | 0    0    0    0    0/100 0/120 0   
+c  | 0    0    0    0    0    0    0/150
+d  | 0    0    0    0/50 0    0    0/80
+e  | 0    0    0    0    0/50 0    0/150
+t  | 0    0    0    0    0    0    0   
+
+Réétiqueter b à hauteur 1
+
+Pousser 100 unités de b vers d
+
+Affichage du graphe résiduel :
+     s    a    b    c    d    e    t  
+s  | 0    150/150 150/150 0    0    0    0   
+a  | 0    0    0    120/120 30/100 0    0   
+b  | 0    0    0    0    100/100 0/120 0   
+c  | 0    0    0    0    0    0    0/150
+d  | 0    0    0    0/50 0    0    0/80
+e  | 0    0    0    0    0/50 0    0/150
+t  | 0    0    0    0    0    0    0   
+
+Pousser 50 unités de b vers e
+
+Affichage du graphe résiduel :
+     s    a    b    c    d    e    t  
+s  | 0    150/150 150/150 0    0    0    0   
+a  | 0    0    0    120/120 30/100 0    0   
+b  | 0    0    0    0    100/100 50/120 0   
+c  | 0    0    0    0    0    0    0/150
+d  | 0    0    0    0/50 0    0    0/80
+e  | 0    0    0    0    0/50 0    0/150
+t  | 0    0    0    0    0    0    0   
+
+Réétiqueter c à hauteur 1
+
+Pousser 120 unités de c vers t
+
+Affichage du graphe résiduel :
+     s    a    b    c    d    e    t  
+s  | 0    150/150 150/150 0    0    0    0   
+a  | 0    0    0    120/120 30/100 0    0   
+b  | 0    0    0    0    100/100 50/120 0   
+c  | 0    0    0    0    0    0    120/150
+d  | 0    0    0    0/50 0    0    0/80
+e  | 0    0    0    0    0/50 0    0/150
+t  | 0    0    0    0    0    0    0   
+
+Réétiqueter d à hauteur 1
+
+Pousser 80 unités de d vers t
+
+Affichage du graphe résiduel :
+     s    a    b    c    d    e    t  
+s  | 0    150/150 150/150 0    0    0    0   
+a  | 0    0    0    120/120 30/100 0    0   
+b  | 0    0    0    0    100/100 50/120 0   
+c  | 0    0    0    0    0    0    120/150
+d  | 0    0    0    0/50 0    0    80/80
+e  | 0    0    0    0    0/50 0    0/150
+t  | 0    0    0    0    0    0    0   
+
+Réétiqueter d à hauteur 2
+
+Pousser 30 unités de d vers a
+
+Affichage du graphe résiduel :
+     s    a    b    c    d    e    t  
+s  | 0    150/150 150/150 0    0    0    0   
+a  | 0    0    0    120/120 0/100 0    0   
+b  | 0    0    0    0    100/100 50/120 0   
+c  | 0    0    0    0    0    0    120/150
+d  | 0    0    0    0/50 0    0    80/80
+e  | 0    0    0    0    0/50 0    0/150
+t  | 0    0    0    0    0    0    0   
+
+Réétiqueter a à hauteur 3
+
+Pousser 30 unités de a vers d
+
+Affichage du graphe résiduel :
+     s    a    b    c    d    e    t  
+s  | 0    150/150 150/150 0    0    0    0   
+a  | 0    0    0    120/120 30/100 0    0   
+b  | 0    0    0    0    100/100 50/120 0   
+c  | 0    0    0    0    0    0    120/150
+d  | 0    0    0    0/50 0    0    80/80
+e  | 0    0    0    0    0/50 0    0/150
+t  | 0    0    0    0    0    0    0   
+
+Pousser 50 unités de d vers b
+
+Affichage du graphe résiduel :
+     s    a    b    c    d    e    t  
+s  | 0    150/150 150/150 0    0    0    0   
+a  | 0    0    0    120/120 30/100 0    0   
+b  | 0    0    0    0    50/100 50/120 0   
+c  | 0    0    0    0    0    0    120/150
+d  | 0    0    0    0/50 0    0    80/80
+e  | 0    0    0    0    0/50 0    0/150
+t  | 0    0    0    0    0    0    0   
+
+Pousser 50 unités de b vers e
+
+Affichage du graphe résiduel :
+     s    a    b    c    d    e    t  
+s  | 0    150/150 150/150 0    0    0    0   
+a  | 0    0    0    120/120 30/100 0    0   
+b  | 0    0    0    0    50/100 100/120 0   
+c  | 0    0    0    0    0    0    120/150
+d  | 0    0    0    0/50 0    0    80/80
+e  | 0    0    0    0    0/50 0    0/150
+t  | 0    0    0    0    0    0    0   
+
+Réétiqueter e à hauteur 1
+
+Pousser 100 unités de e vers t
+
+Affichage du graphe résiduel :
+     s    a    b    c    d    e    t  
+s  | 0    150/150 150/150 0    0    0    0   
+a  | 0    0    0    120/120 30/100 0    0   
+b  | 0    0    0    0    50/100 100/120 0   
+c  | 0    0    0    0    0    0    120/150
+d  | 0    0    0    0/50 0    0    80/80
+e  | 0    0    0    0    0/50 0    100/150
+t  | 0    0    0    0    0    0    0   
+
+Valeur du flot max = 300

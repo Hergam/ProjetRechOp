@@ -1,0 +1,94 @@
+Matrice de capacité pour la proposition 10 :
+     s   a   b   c   d   e   t 
+s  | 0  150  150   0   0   0   0
+a  | 0   0   0  120  100   0   0
+b  | 0   0   0   0  100  120   0
+c  | 0   0   0   0   0   0  150
+d  | 0   0   0  50   0   0  80
+e  | 0   0   0   0  50   0  150
+t  | 0   0   0   0   0   0   0
+
+Matrice de coût pour la proposition 10 :
+     s   a   b   c   d   e   t 
+s  | .   2   3   .   .   .   .
+a  | .   .   .   4   1   .   .
+b  | .   .   .   .   2   5   .
+c  | .   .   .   .   .   .   3
+d  | .   .   .   6   .   .   3
+e  | .   .   .   .   8   .   4
+t  | .   .   .   .   .   .   .
+
+S
+a,b; Pre(a)=s; Pre(b)=s
+c,d; Pre(c)=a; Pre(d)=a
+e; Pre(e)=b
+t; Pre(t)=c
+Chemin trouvé : [0, 1, 3, 6] de flot 120
+Flot total actuel : 120
+
+Affichage du graphe résiduel :
+     s    a    b    c    d    e    t  
+s  | 0    120/150 0/150 0    0    0    0   
+a  | 0    0    0    120/120 0/100 0    0   
+b  | 0    0    0    0    0/100 0/120 0   
+c  | 0    0    0    0    0    0    120/150
+d  | 0    0    0    0/50 0    0    0/80
+e  | 0    0    0    0    0/50 0    0/150
+t  | 0    0    0    0    0    0    0   
+
+S
+a,b; Pre(a)=s; Pre(b)=s
+d; Pre(d)=a
+e; Pre(e)=b
+c,t; Pre(c)=d; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 6] de flot 30
+Flot total actuel : 150
+
+Affichage du graphe résiduel :
+     s    a    b    c    d    e    t  
+s  | 0    150/150 0/150 0    0    0    0   
+a  | 0    0    0    120/120 30/100 0    0   
+b  | 0    0    0    0    0/100 0/120 0   
+c  | 0    0    0    0    0    0    120/150
+d  | 0    0    0    0/50 0    0    30/80
+e  | 0    0    0    0    0/50 0    0/150
+t  | 0    0    0    0    0    0    0   
+
+S
+b; Pre(b)=s
+d,e; Pre(d)=b; Pre(e)=b
+a,c,t; Pre(a)=d; Pre(c)=d; Pre(t)=d
+Chemin trouvé : [0, 2, 4, 6] de flot 50
+Flot total actuel : 200
+
+Affichage du graphe résiduel :
+     s    a    b    c    d    e    t  
+s  | 0    150/150 50/150 0    0    0    0   
+a  | 0    0    0    120/120 30/100 0    0   
+b  | 0    0    0    0    50/100 0/120 0   
+c  | 0    0    0    0    0    0    120/150
+d  | 0    0    0    0/50 0    0    80/80
+e  | 0    0    0    0    0/50 0    0/150
+t  | 0    0    0    0    0    0    0   
+
+S
+b; Pre(b)=s
+d,e; Pre(d)=b; Pre(e)=b
+a,c; Pre(a)=d; Pre(c)=d
+t; Pre(t)=e
+Chemin trouvé : [0, 2, 5, 6] de flot 100
+Flot total actuel : 300
+
+Affichage du graphe résiduel :
+     s    a    b    c    d    e    t  
+s  | 0    150/150 150/150 0    0    0    0   
+a  | 0    0    0    120/120 30/100 0    0   
+b  | 0    0    0    0    50/100 100/120 0   
+c  | 0    0    0    0    0    0    120/150
+d  | 0    0    0    0/50 0    0    80/80
+e  | 0    0    0    0    0/50 0    100/150
+t  | 0    0    0    0    0    0    0   
+
+S
+Aucun chemin trouvé vers t, fin de l'algorithme.
+Valeur du flot max = 300

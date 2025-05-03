@@ -1,0 +1,254 @@
+Matrice de capacité pour la proposition 8 :
+     s   a   b   c   d   e   t 
+s  | 0  31  25  27   0   0   0
+a  | 0   0  20   0  12   0   0
+b  | 0   0   0   0   6   0   0
+c  | 0   0  30   0   0  35   0
+d  | 0   0   0   0   0   0  30
+e  | 0   0  11   0  10   0  40
+t  | 0   0   0   0   0   0   0
+
+Matrice de coût pour la proposition 8 :
+     s   a   b   c   d   e   t 
+s  | .   8   4  15   .   .   .
+a  | .   .   7   .  16   .   .
+b  | .   .   .   .   3   .   .
+c  | .   .   8   .   .  20   .
+d  | .   .   .   .   .   .  22
+e  | .   .   0   .  15   .  15
+t  | .   .   .   .   .   .   .
+
+
+Pousser 31 unités de s vers a
+Pousser 25 unités de s vers b
+Pousser 27 unités de s vers c
+
+Affichage du graphe résiduel :
+     s    a    b    c    d    e    t  
+s  | 0    31/31 25/25 27/27 0    0    0   
+a  | 0    0    0/20 0    0/12 0    0   
+b  | 0    0    0    0    0/6  0    0   
+c  | 0    0    0/30 0    0    0/35 0   
+d  | 0    0    0    0    0    0    0/30
+e  | 0    0    0/11 0    0/10 0    0/40
+t  | 0    0    0    0    0    0    0   
+
+Réétiqueter a à hauteur 1
+
+Pousser 20 unités de a vers b
+
+Affichage du graphe résiduel :
+     s    a    b    c    d    e    t  
+s  | 0    31/31 25/25 27/27 0    0    0   
+a  | 0    0    20/20 0    0/12 0    0   
+b  | 0    0    0    0    0/6  0    0   
+c  | 0    0    0/30 0    0    0/35 0   
+d  | 0    0    0    0    0    0    0/30
+e  | 0    0    0/11 0    0/10 0    0/40
+t  | 0    0    0    0    0    0    0   
+
+Pousser 11 unités de a vers d
+
+Affichage du graphe résiduel :
+     s    a    b    c    d    e    t  
+s  | 0    31/31 25/25 27/27 0    0    0   
+a  | 0    0    20/20 0    11/12 0    0   
+b  | 0    0    0    0    0/6  0    0   
+c  | 0    0    0/30 0    0    0/35 0   
+d  | 0    0    0    0    0    0    0/30
+e  | 0    0    0/11 0    0/10 0    0/40
+t  | 0    0    0    0    0    0    0   
+
+Réétiqueter b à hauteur 1
+
+Pousser 6 unités de b vers d
+
+Affichage du graphe résiduel :
+     s    a    b    c    d    e    t  
+s  | 0    31/31 25/25 27/27 0    0    0   
+a  | 0    0    20/20 0    11/12 0    0   
+b  | 0    0    0    0    6/6  0    0   
+c  | 0    0    0/30 0    0    0/35 0   
+d  | 0    0    0    0    0    0    0/30
+e  | 0    0    0/11 0    0/10 0    0/40
+t  | 0    0    0    0    0    0    0   
+
+Réétiqueter b à hauteur 2
+
+Pousser 20 unités de b vers a
+
+Affichage du graphe résiduel :
+     s    a    b    c    d    e    t  
+s  | 0    31/31 25/25 27/27 0    0    0   
+a  | 0    0    0/20 0    11/12 0    0   
+b  | 0    0    0    0    6/6  0    0   
+c  | 0    0    0/30 0    0    0/35 0   
+d  | 0    0    0    0    0    0    0/30
+e  | 0    0    0/11 0    0/10 0    0/40
+t  | 0    0    0    0    0    0    0   
+
+Pousser 1 unités de a vers d
+
+Affichage du graphe résiduel :
+     s    a    b    c    d    e    t  
+s  | 0    31/31 25/25 27/27 0    0    0   
+a  | 0    0    0/20 0    12/12 0    0   
+b  | 0    0    0    0    6/6  0    0   
+c  | 0    0    0/30 0    0    0/35 0   
+d  | 0    0    0    0    0    0    0/30
+e  | 0    0    0/11 0    0/10 0    0/40
+t  | 0    0    0    0    0    0    0   
+
+Réétiqueter a à hauteur 3
+
+Pousser 19 unités de a vers b
+
+Affichage du graphe résiduel :
+     s    a    b    c    d    e    t  
+s  | 0    31/31 25/25 27/27 0    0    0   
+a  | 0    0    19/20 0    12/12 0    0   
+b  | 0    0    0    0    6/6  0    0   
+c  | 0    0    0/30 0    0    0/35 0   
+d  | 0    0    0    0    0    0    0/30
+e  | 0    0    0/11 0    0/10 0    0/40
+t  | 0    0    0    0    0    0    0   
+
+Réétiqueter b à hauteur 4
+
+Pousser 19 unités de b vers a
+
+Affichage du graphe résiduel :
+     s    a    b    c    d    e    t  
+s  | 0    31/31 25/25 27/27 0    0    0   
+a  | 0    0    0/20 0    12/12 0    0   
+b  | 0    0    0    0    6/6  0    0   
+c  | 0    0    0/30 0    0    0/35 0   
+d  | 0    0    0    0    0    0    0/30
+e  | 0    0    0/11 0    0/10 0    0/40
+t  | 0    0    0    0    0    0    0   
+
+Réétiqueter a à hauteur 5
+
+Pousser 19 unités de a vers b
+
+Affichage du graphe résiduel :
+     s    a    b    c    d    e    t  
+s  | 0    31/31 25/25 27/27 0    0    0   
+a  | 0    0    19/20 0    12/12 0    0   
+b  | 0    0    0    0    6/6  0    0   
+c  | 0    0    0/30 0    0    0/35 0   
+d  | 0    0    0    0    0    0    0/30
+e  | 0    0    0/11 0    0/10 0    0/40
+t  | 0    0    0    0    0    0    0   
+
+Réétiqueter b à hauteur 6
+
+Pousser 19 unités de b vers a
+
+Affichage du graphe résiduel :
+     s    a    b    c    d    e    t  
+s  | 0    31/31 25/25 27/27 0    0    0   
+a  | 0    0    0/20 0    12/12 0    0   
+b  | 0    0    0    0    6/6  0    0   
+c  | 0    0    0/30 0    0    0/35 0   
+d  | 0    0    0    0    0    0    0/30
+e  | 0    0    0/11 0    0/10 0    0/40
+t  | 0    0    0    0    0    0    0   
+
+Réétiqueter a à hauteur 7
+
+Pousser 19 unités de a vers b
+
+Affichage du graphe résiduel :
+     s    a    b    c    d    e    t  
+s  | 0    31/31 25/25 27/27 0    0    0   
+a  | 0    0    19/20 0    12/12 0    0   
+b  | 0    0    0    0    6/6  0    0   
+c  | 0    0    0/30 0    0    0/35 0   
+d  | 0    0    0    0    0    0    0/30
+e  | 0    0    0/11 0    0/10 0    0/40
+t  | 0    0    0    0    0    0    0   
+
+Réétiqueter b à hauteur 8
+
+Pousser 25 unités de b vers s
+
+Affichage du graphe résiduel :
+     s    a    b    c    d    e    t  
+s  | 0    31/31 0/25 27/27 0    0    0   
+a  | 0    0    19/20 0    12/12 0    0   
+b  | 0    0    0    0    6/6  0    0   
+c  | 0    0    0/30 0    0    0/35 0   
+d  | 0    0    0    0    0    0    0/30
+e  | 0    0    0/11 0    0/10 0    0/40
+t  | 0    0    0    0    0    0    0   
+
+Pousser 13 unités de b vers a
+
+Affichage du graphe résiduel :
+     s    a    b    c    d    e    t  
+s  | 0    31/31 0/25 27/27 0    0    0   
+a  | 0    0    6/20 0    12/12 0    0   
+b  | 0    0    0    0    6/6  0    0   
+c  | 0    0    0/30 0    0    0/35 0   
+d  | 0    0    0    0    0    0    0/30
+e  | 0    0    0/11 0    0/10 0    0/40
+t  | 0    0    0    0    0    0    0   
+
+Réétiqueter a à hauteur 8
+
+Pousser 13 unités de a vers s
+
+Affichage du graphe résiduel :
+     s    a    b    c    d    e    t  
+s  | 0    18/31 0/25 27/27 0    0    0   
+a  | 0    0    6/20 0    12/12 0    0   
+b  | 0    0    0    0    6/6  0    0   
+c  | 0    0    0/30 0    0    0/35 0   
+d  | 0    0    0    0    0    0    0/30
+e  | 0    0    0/11 0    0/10 0    0/40
+t  | 0    0    0    0    0    0    0   
+
+Réétiqueter c à hauteur 1
+
+Pousser 27 unités de c vers e
+
+Affichage du graphe résiduel :
+     s    a    b    c    d    e    t  
+s  | 0    18/31 0/25 27/27 0    0    0   
+a  | 0    0    6/20 0    12/12 0    0   
+b  | 0    0    0    0    6/6  0    0   
+c  | 0    0    0/30 0    0    27/35 0   
+d  | 0    0    0    0    0    0    0/30
+e  | 0    0    0/11 0    0/10 0    0/40
+t  | 0    0    0    0    0    0    0   
+
+Réétiqueter d à hauteur 1
+
+Pousser 18 unités de d vers t
+
+Affichage du graphe résiduel :
+     s    a    b    c    d    e    t  
+s  | 0    18/31 0/25 27/27 0    0    0   
+a  | 0    0    6/20 0    12/12 0    0   
+b  | 0    0    0    0    6/6  0    0   
+c  | 0    0    0/30 0    0    27/35 0   
+d  | 0    0    0    0    0    0    18/30
+e  | 0    0    0/11 0    0/10 0    0/40
+t  | 0    0    0    0    0    0    0   
+
+Réétiqueter e à hauteur 1
+
+Pousser 27 unités de e vers t
+
+Affichage du graphe résiduel :
+     s    a    b    c    d    e    t  
+s  | 0    18/31 0/25 27/27 0    0    0   
+a  | 0    0    6/20 0    12/12 0    0   
+b  | 0    0    0    0    6/6  0    0   
+c  | 0    0    0/30 0    0    27/35 0   
+d  | 0    0    0    0    0    0    18/30
+e  | 0    0    0/11 0    0/10 0    27/40
+t  | 0    0    0    0    0    0    0   
+
+Valeur du flot max = 45

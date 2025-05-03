@@ -1,0 +1,77 @@
+Matrice de capacité pour la proposition 8 :
+     s   a   b   c   d   e   t 
+s  | 0  31  25  27   0   0   0
+a  | 0   0  20   0  12   0   0
+b  | 0   0   0   0   6   0   0
+c  | 0   0  30   0   0  35   0
+d  | 0   0   0   0   0   0  30
+e  | 0   0  11   0  10   0  40
+t  | 0   0   0   0   0   0   0
+
+Matrice de coût pour la proposition 8 :
+     s   a   b   c   d   e   t 
+s  | .   8   4  15   .   .   .
+a  | .   .   7   .  16   .   .
+b  | .   .   .   .   3   .   .
+c  | .   .   8   .   .  20   .
+d  | .   .   .   .   .   .  22
+e  | .   .   0   .  15   .  15
+t  | .   .   .   .   .   .   .
+
+Exécution de l'algorithme de Bellman-Ford:
+k      s     a     b     c     d     e     t  
+0 |    0   inf   inf   inf   inf   inf   inf   
+1 |    0     8     4    15     7    35    29   
+2 |    0     8     4    15     7    35    29   
+Aucune modification pendant l'itération 2, fin de Bellman-Ford.
+Plus court chemin: s -> b -> d -> t de coût 29
+
+Flot trouvé: 6 avec coût 174
+Flot total actuel: 6 avec coût total 174
+     s   a   b   c   d   e   t 
+s  | .   8   4  15   .   .   .
+a  | .   .   7   .  16   .   .
+b  |-4   .   .   .   .   .   .
+c  | .   .   8   .   .  20   .
+d  | .   .   .   .   .   .  22
+e  | .   .   0   .  15   .  15
+t  | .   .   .   .  -22   .   .
+
+Exécution de l'algorithme de Bellman-Ford:
+k      s     a     b     c     d     e     t  
+0 |    0   inf   inf   inf   inf   inf   inf   
+1 |    0     8     4    15    24    35    46   
+2 |    0     8     4    15    24    35    46   
+Aucune modification pendant l'itération 2, fin de Bellman-Ford.
+Plus court chemin: s -> a -> d -> t de coût 46
+
+Flot trouvé: 12 avec coût 552
+Flot total actuel: 18 avec coût total 726
+     s   a   b   c   d   e   t 
+s  | .   8   4  15   .   .   .
+a  |-8   .   7   .   .   .   .
+b  |-4   .   .   .   .   .   .
+c  | .   .   8   .   .  20   .
+d  | .   .   .   .   .   .  22
+e  | .   .   0   .  15   .  15
+t  | .   .   .   .  -22   .   .
+
+Exécution de l'algorithme de Bellman-Ford:
+k      s     a     b     c     d     e     t  
+0 |    0   inf   inf   inf   inf   inf   inf   
+1 |    0     8     4    15    28    35    50   
+2 |    0     8     4    15    28    35    50   
+Aucune modification pendant l'itération 2, fin de Bellman-Ford.
+Plus court chemin: s -> c -> e -> t de coût 50
+
+Flot trouvé: 27 avec coût 1350
+Flot total actuel: 45 avec coût total 2076
+     s   a   b   c   d   e   t 
+s  | .   8   4   .   .   .   .
+a  |-8   .   7   .   .   .   .
+b  |-4   .   .   .   .   .   .
+c  | .   .   8   .   .  20   .
+d  | .   .   .   .   .   .  22
+e  | .   .   0  -20  15   .  15
+t  | .   .   .   .  -22  -15   .
+Flot recherché atteint ou dépassé, fin de l'algorithme.

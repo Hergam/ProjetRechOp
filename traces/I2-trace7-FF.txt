@@ -1,0 +1,117 @@
+Matrice de capacité pour la proposition 7 :
+     s   a   b   c   d   t 
+s  | 0   5   0   8   5   0
+a  | 0   0   1   0   0   7
+b  | 0   0   0   0   0   1
+c  | 0   3   0   0   0   9
+d  | 0   0   0   4   0   1
+t  | 0   0   0   0   0   0
+
+Matrice de coût pour la proposition 7 :
+     s   a   b   c   d   t 
+s  | .   4   .   2   4   .
+a  | .   .   2   .   .   3
+b  | .   .   .   .   .   3
+c  | .   0   .   .   .   6
+d  | .   .   .   2   .   2
+t  | .   .   .   .   .   .
+
+S
+a,c,d; Pre(a)=s; Pre(c)=s; Pre(d)=s
+b,t; Pre(b)=a; Pre(t)=a
+Chemin trouvé : [0, 1, 5] de flot 5
+Flot total actuel : 5
+
+Affichage du graphe résiduel :
+     s    a    b    c    d    t  
+s  | 0    5/5  0    0/8  0/5  0   
+a  | 0    0    0/1  0    0    5/7 
+b  | 0    0    0    0    0    0/1 
+c  | 0    0/3  0    0    0    0/9 
+d  | 0    0    0    0/4  0    0/1 
+t  | 0    0    0    0    0    0   
+
+S
+c,d; Pre(c)=s; Pre(d)=s
+a,t; Pre(a)=c; Pre(t)=c
+Chemin trouvé : [0, 3, 5] de flot 8
+Flot total actuel : 13
+
+Affichage du graphe résiduel :
+     s    a    b    c    d    t  
+s  | 0    5/5  0    8/8  0/5  0   
+a  | 0    0    0/1  0    0    5/7 
+b  | 0    0    0    0    0    0/1 
+c  | 0    0/3  0    0    0    8/9 
+d  | 0    0    0    0/4  0    0/1 
+t  | 0    0    0    0    0    0   
+
+S
+d; Pre(d)=s
+c,t; Pre(c)=d; Pre(t)=d
+Chemin trouvé : [0, 4, 5] de flot 1
+Flot total actuel : 14
+
+Affichage du graphe résiduel :
+     s    a    b    c    d    t  
+s  | 0    5/5  0    8/8  1/5  0   
+a  | 0    0    0/1  0    0    5/7 
+b  | 0    0    0    0    0    0/1 
+c  | 0    0/3  0    0    0    8/9 
+d  | 0    0    0    0/4  0    1/1 
+t  | 0    0    0    0    0    0   
+
+S
+d; Pre(d)=s
+c; Pre(c)=d
+a,t; Pre(a)=c; Pre(t)=c
+Chemin trouvé : [0, 4, 3, 5] de flot 1
+Flot total actuel : 15
+
+Affichage du graphe résiduel :
+     s    a    b    c    d    t  
+s  | 0    5/5  0    8/8  2/5  0   
+a  | 0    0    0/1  0    0    5/7 
+b  | 0    0    0    0    0    0/1 
+c  | 0    0/3  0    0    0    9/9 
+d  | 0    0    0    1/4  0    1/1 
+t  | 0    0    0    0    0    0   
+
+S
+d; Pre(d)=s
+c; Pre(c)=d
+a; Pre(a)=c
+b,t; Pre(b)=a; Pre(t)=a
+Chemin trouvé : [0, 4, 3, 1, 5] de flot 2
+Flot total actuel : 17
+
+Affichage du graphe résiduel :
+     s    a    b    c    d    t  
+s  | 0    5/5  0    8/8  4/5  0   
+a  | 0    0    0/1  0    0    7/7 
+b  | 0    0    0    0    0    0/1 
+c  | 0    2/3  0    0    0    9/9 
+d  | 0    0    0    3/4  0    1/1 
+t  | 0    0    0    0    0    0   
+
+S
+d; Pre(d)=s
+c; Pre(c)=d
+a; Pre(a)=c
+b; Pre(b)=a
+t; Pre(t)=b
+Chemin trouvé : [0, 4, 3, 1, 2, 5] de flot 1
+Flot total actuel : 18
+
+Affichage du graphe résiduel :
+     s    a    b    c    d    t  
+s  | 0    5/5  0    8/8  5/5  0   
+a  | 0    0    1/1  0    0    7/7 
+b  | 0    0    0    0    0    1/1 
+c  | 0    3/3  0    0    0    9/9 
+d  | 0    0    0    4/4  0    1/1 
+t  | 0    0    0    0    0    0   
+
+S
+Aucun chemin trouvé vers t, fin de l'algorithme.
+Valeur du flot max = 18

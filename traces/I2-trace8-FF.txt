@@ -1,0 +1,77 @@
+Matrice de capacité pour la proposition 8 :
+     s   a   b   c   d   e   t 
+s  | 0  31  25  27   0   0   0
+a  | 0   0  20   0  12   0   0
+b  | 0   0   0   0   6   0   0
+c  | 0   0  30   0   0  35   0
+d  | 0   0   0   0   0   0  30
+e  | 0   0  11   0  10   0  40
+t  | 0   0   0   0   0   0   0
+
+Matrice de coût pour la proposition 8 :
+     s   a   b   c   d   e   t 
+s  | .   8   4  15   .   .   .
+a  | .   .   7   .  16   .   .
+b  | .   .   .   .   3   .   .
+c  | .   .   8   .   .  20   .
+d  | .   .   .   .   .   .  22
+e  | .   .   0   .  15   .  15
+t  | .   .   .   .   .   .   .
+
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e; Pre(e)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 1, 4, 6] de flot 12
+Flot total actuel : 12
+
+Affichage du graphe résiduel :
+     s    a    b    c    d    e    t  
+s  | 0    12/31 0/25 0/27 0    0    0   
+a  | 0    0    0/20 0    12/12 0    0   
+b  | 0    0    0    0    0/6  0    0   
+c  | 0    0    0/30 0    0    0/35 0   
+d  | 0    0    0    0    0    0    12/30
+e  | 0    0    0/11 0    0/10 0    0/40
+t  | 0    0    0    0    0    0    0   
+
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=b
+e; Pre(e)=c
+t; Pre(t)=d
+Chemin trouvé : [0, 2, 4, 6] de flot 6
+Flot total actuel : 18
+
+Affichage du graphe résiduel :
+     s    a    b    c    d    e    t  
+s  | 0    12/31 6/25 0/27 0    0    0   
+a  | 0    0    0/20 0    12/12 0    0   
+b  | 0    0    0    0    6/6  0    0   
+c  | 0    0    0/30 0    0    0/35 0   
+d  | 0    0    0    0    0    0    18/30
+e  | 0    0    0/11 0    0/10 0    0/40
+t  | 0    0    0    0    0    0    0   
+
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+e; Pre(e)=c
+d,t; Pre(d)=e; Pre(t)=e
+Chemin trouvé : [0, 3, 5, 6] de flot 27
+Flot total actuel : 45
+
+Affichage du graphe résiduel :
+     s    a    b    c    d    e    t  
+s  | 0    12/31 6/25 27/27 0    0    0   
+a  | 0    0    0/20 0    12/12 0    0   
+b  | 0    0    0    0    6/6  0    0   
+c  | 0    0    0/30 0    0    27/35 0   
+d  | 0    0    0    0    0    0    18/30
+e  | 0    0    0/11 0    0/10 0    27/40
+t  | 0    0    0    0    0    0    0   
+
+S
+a,b; Pre(a)=s; Pre(b)=s
+Aucun chemin trouvé vers t, fin de l'algorithme.
+Valeur du flot max = 45

@@ -1,0 +1,114 @@
+Matrice de capacité pour la proposition 3 :
+     s   a   b   c   d   e   f   t 
+s  | 0   5   8   4   0   0   0   0
+a  | 0   0   4   0   7   0   0   0
+b  | 0   0   0   0   0   7   8   0
+c  | 0   0   7   0   0   0   4   0
+d  | 0   0   0   0   0   6   0   0
+e  | 0   0   0   0   0   0   0   7
+f  | 0   0   0   0   0   0   0  10
+t  | 0   0   0   0   0   0   0   0
+
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+e,f; Pre(e)=b; Pre(f)=b
+t; Pre(t)=e
+Chemin trouvé : [0, 2, 5, 7] de flot 7
+Flot total actuel : 7
+
+Affichage du graphe résiduel :
+     s    a    b    c    d    e    f    t  
+s  | 0    0/5  7/8  0/4  0    0    0    0   
+a  | 0    0    0/4  0    0/7  0    0    0   
+b  | 0    0    0    0    0    7/7  0/8  0   
+c  | 0    0    0/7  0    0    0    0/4  0   
+d  | 0    0    0    0    0    0/6  0    0   
+e  | 0    0    0    0    0    0    0    7/7 
+f  | 0    0    0    0    0    0    0    0/10
+t  | 0    0    0    0    0    0    0    0   
+
+S
+a,b,c; Pre(a)=s; Pre(b)=s; Pre(c)=s
+d; Pre(d)=a
+f; Pre(f)=b
+e; Pre(e)=d
+t; Pre(t)=f
+Chemin trouvé : [0, 2, 6, 7] de flot 1
+Flot total actuel : 8
+
+Affichage du graphe résiduel :
+     s    a    b    c    d    e    f    t  
+s  | 0    0/5  8/8  0/4  0    0    0    0   
+a  | 0    0    0/4  0    0/7  0    0    0   
+b  | 0    0    0    0    0    7/7  1/8  0   
+c  | 0    0    0/7  0    0    0    0/4  0   
+d  | 0    0    0    0    0    0/6  0    0   
+e  | 0    0    0    0    0    0    0    7/7 
+f  | 0    0    0    0    0    0    0    1/10
+t  | 0    0    0    0    0    0    0    0   
+
+S
+a,c; Pre(a)=s; Pre(c)=s
+b,d; Pre(b)=a; Pre(d)=a
+f; Pre(f)=c
+e; Pre(e)=d
+t; Pre(t)=f
+Chemin trouvé : [0, 3, 6, 7] de flot 4
+Flot total actuel : 12
+
+Affichage du graphe résiduel :
+     s    a    b    c    d    e    f    t  
+s  | 0    0/5  8/8  4/4  0    0    0    0   
+a  | 0    0    0/4  0    0/7  0    0    0   
+b  | 0    0    0    0    0    7/7  1/8  0   
+c  | 0    0    0/7  0    0    0    4/4  0   
+d  | 0    0    0    0    0    0/6  0    0   
+e  | 0    0    0    0    0    0    0    7/7 
+f  | 0    0    0    0    0    0    0    5/10
+t  | 0    0    0    0    0    0    0    0   
+
+S
+a; Pre(a)=s
+b,d; Pre(b)=a; Pre(d)=a
+f; Pre(f)=b
+e; Pre(e)=d
+c,t; Pre(c)=f; Pre(t)=f
+Chemin trouvé : [0, 1, 2, 6, 7] de flot 4
+Flot total actuel : 16
+
+Affichage du graphe résiduel :
+     s    a    b    c    d    e    f    t  
+s  | 0    4/5  8/8  4/4  0    0    0    0   
+a  | 0    0    4/4  0    0/7  0    0    0   
+b  | 0    0    0    0    0    7/7  5/8  0   
+c  | 0    0    0/7  0    0    0    4/4  0   
+d  | 0    0    0    0    0    0/6  0    0   
+e  | 0    0    0    0    0    0    0    7/7 
+f  | 0    0    0    0    0    0    0    9/10
+t  | 0    0    0    0    0    0    0    0   
+
+S
+a; Pre(a)=s
+d; Pre(d)=a
+e; Pre(e)=d
+b; Pre(b)=e
+f; Pre(f)=b
+c,t; Pre(c)=f; Pre(t)=f
+Chemin trouvé : [0, 1, 4, 5, 2, 6, 7] de flot 1
+Flot total actuel : 17
+
+Affichage du graphe résiduel :
+     s    a    b    c    d    e    f    t  
+s  | 0    5/5  8/8  4/4  0    0    0    0   
+a  | 0    0    4/4  0    1/7  0    0    0   
+b  | 0    0    0    0    0    6/7  6/8  0   
+c  | 0    0    0/7  0    0    0    4/4  0   
+d  | 0    0    0    0    0    1/6  0    0   
+e  | 0    0    0    0    0    0    0    7/7 
+f  | 0    0    0    0    0    0    0    10/10
+t  | 0    0    0    0    0    0    0    0   
+
+S
+Aucun chemin trouvé vers t, fin de l'algorithme.
+Valeur du flot max = 17

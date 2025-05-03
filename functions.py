@@ -26,10 +26,22 @@ def lire_matrice_graphe(n):
         nbrSommet = int(fichier.readline().strip())
         lignes = [list(map(int, ligne.strip().split())) for ligne in fichier]
         
-        # Séparer la matrice en deux si elle contient les coûts (propositions > 5)
         if int(n) > 5:
             matrice_capacite = np.array(lignes[:nbrSommet])
             matrice_cout = np.array(lignes[nbrSommet:])
+            # Ajustement pour permettre les arêtes de coût 0
+            matrice_cout_mod = []
+            for i in range(nbrSommet):
+                row = []
+                for j in range(nbrSommet):
+                    cap = matrice_capacite[i][j]
+                    cout = matrice_cout[i][j]
+                    if cout == 0 and cap == 0:
+                        row.append(None)
+                    else:
+                        row.append(cout)
+                matrice_cout_mod.append(row)
+            matrice_cout = np.array(matrice_cout_mod, dtype=object)
         else:
             matrice_capacite = np.array(lignes)
             matrice_cout = None
@@ -43,7 +55,7 @@ def ecrire_trace(numero_proposition, message):
     if not os.path.exists("traces"):
         os.makedirs("traces")
     
-    nom_fichier = f"traces/I1-trace{numero_proposition}-{algo}.txt"
+    nom_fichier = f"traces/I2-trace{numero_proposition}-{algo}.txt"
     
     # Si c'est la première écriture pour cette proposition dans cette exécution
     if numero_proposition not in _traces_reinitialisees:
@@ -75,7 +87,9 @@ def affichage(matrice, numero_proposition):
     
     # Afficher chaque ligne avec le nom du sommet
     for i in range(n):
-        ligne = f"{noms[i]:2} |" + "  ".join(f"{val:2}" for val in matrice[i])
+        ligne = f"{noms[i]:2} |" + "  ".join(
+            f"{val:2}" if val is not None else " ." for val in matrice[i]
+        )
         printt(ligne)
 
 def printt(message, numero_proposition=None):
@@ -176,98 +190,81 @@ def FF(matrice):
         printt(f"Chemin trouvé : {chemin} de flot {flot}")
         printt(f"Flot total actuel : {flot_total}")
 
-    
-    affichage_flot_max(matrice, matrice_residuelle)
+        # Affichage du graphe résiduel à chaque itération
+        affichage_flot_max(matrice, matrice_residuelle)
+
     printt(f"Valeur du flot max = {flot_total}")
     return flot_total
 
 def push_relabel(matrice):
     n = len(matrice)
-    # Créer une copie de la matrice pour le graphe résiduel
     residual = matrice.copy()
-    # Initialiser les hauteurs: source à n, autres à 0
     height = [0] * n
     height[0] = n
-    # Initialiser les excès à 0
     excess = [0] * n
-    
-    # Pré-écoulement depuis la source
+
+    noms = generer_noms_sommets(n)
+    printt("\n")
     for v in range(n):
         if matrice[0][v] > 0:
             flow = matrice[0][v]
             residual[0][v] -= flow
             residual[v][0] += flow
             excess[v] += flow
-    
+            printt(f"Pousser {flow} unités de {noms[0]} vers {noms[v]}")
+    affichage_flot_max(matrice, residual)  # Affiche après chaque push du pré-écoulement
+
     while True:
-        # Trouver un sommet avec excès positif
         u = -1
-        for i in range(1, n-1):  # Skip source (0) and sink (n-1)
+        for i in range(1, n-1):
             if excess[i] > 0:
                 u = i
                 break
-        
-        if u == -1:  # Aucun sommet avec excès
+
+        if u == -1:
             break
-            
-        # Essayer de push, sinon relabel
+
         pushed = False
         for v in range(n):
             if residual[u][v] > 0 and height[u] == height[v] + 1:
-                # Push operation
                 flow = min(excess[u], residual[u][v])
                 residual[u][v] -= flow
                 residual[v][u] += flow
                 excess[u] -= flow
                 excess[v] += flow
                 pushed = True
-                printt(f"Pousser {flow} unités de {generer_noms_sommets(n)[u]} vers {generer_noms_sommets(n)[v]}")
-                if excess[u] == 0:
-                    break
-        
+                printt(f"\nPousser {flow} unités de {noms[u]} vers {noms[v]}")
+                affichage_flot_max(matrice, residual)  # Affiche après chaque push
+                break
+
         if not pushed:
-            # Relabel operation
             min_height = float('inf')
             for v in range(n):
                 if residual[u][v] > 0:
                     min_height = min(min_height, height[v])
             if min_height != float('inf'):
                 height[u] = min_height + 1
-                printt(f"\nRéétiqueter {generer_noms_sommets(n)[u]} à hauteur {height[u]}")
-    
-    # Calculer le flot maximal (somme des excès au puits)
+                printt(f"\nRéétiqueter {noms[u]} à hauteur {height[u]}")
+
     max_flow = excess[n-1]
     printt(f"\nValeur du flot max = {max_flow}")
-    
-    # Afficher la matrice de flot final
-    flow_matrix = np.zeros_like(matrice)
-    for i in range(n):
-        for j in range(n):
-            if matrice[i][j] > 0:
-                flow_matrix[i][j] = matrice[i][j] - residual[i][j]
-    
-    affichage_flot_max(matrice, residual)
     return max_flow
 
 def bellman_ford(matrice_cout):
     n = len(matrice_cout)
     source = 0  # sommet s
-    
+
     # Initialisation
     distance = [float('inf')] * n
     predecesseur = [None] * n
     distance[source] = 0
-    
+
     printt("\nExécution de l'algorithme de Bellman-Ford:")
-    
-    # Afficher l'état initial
+
     noms_sommets = generer_noms_sommets(n)
-    
-    # En-tête avec les noms des sommets
     en_tete = "k      " + "   ".join(f"{nom:3}" for nom in noms_sommets)
     printt(en_tete)
-    
-    # Première ligne avec les distances initiales
+
     ligne = "0 |  "
     for d in distance:
         if d == float('inf'):
@@ -275,29 +272,17 @@ def bellman_ford(matrice_cout):
         else:
             ligne += f"{d:3}   "
     printt(ligne)
-    
-    # Relaxation des arcs
-    file = []
-    file.append(source)
+
     for k in range(n):
-        next_file = []
         modified = False
-        
-        for u in file:
+        for u in range(n):
             for v in range(n):
-                if matrice_cout[u][v] != 0:  # s'il existe un arc
-                    if distance[v] > distance[u] + matrice_cout[u][v]:
+                if matrice_cout[u][v] is not None:
+                    if distance[u] != float('inf') and distance[v] > distance[u] + matrice_cout[u][v]:
                         modified = True
                         distance[v] = distance[u] + matrice_cout[u][v]
                         predecesseur[v] = u
-                        next_file.append(v)
-            if u in file:
-                file.remove(u)
-        
-        
-        file = next_file
 
-        # Afficher la ligne des distances actuelles
         ligne = f"{k+1} |  "
         for d in distance:
             if d == float('inf'):
@@ -309,27 +294,25 @@ def bellman_ford(matrice_cout):
         if not modified:
             printt(f"Aucune modification pendant l'itération {k+1}, fin de Bellman-Ford.")
             break
-    
-    # Reconstruction du plus court chemin vers t
+
     chemin = []
     sommet = n-1  # sommet t
     while sommet is not None:
         chemin.append(sommet)
         sommet = predecesseur[sommet]
-    chemin = chemin[::-1]  # inverse le chemin pour avoir s->t
+    chemin = chemin[::-1]
     strChemin = []
     for sommet in chemin:
         strChemin.append(noms_sommets[sommet])
-    
+
     if distance[n-1] == float('inf'):
         printt(f"Plus court chemin: {strChemin[-1]}")
     else:
         printt(f"Plus court chemin: {' -> '.join(strChemin)} de coût {distance[n-1]}")
-    
+
     return chemin, distance[n-1]
 
 def flotCoutMin(matriceCout, matriceCapacite, flotRecherche):
-    
     flotRecherche = int(flotRecherche)
         
     flot_total = 0
@@ -337,6 +320,11 @@ def flotCoutMin(matriceCout, matriceCapacite, flotRecherche):
     n = len(matriceCapacite)
     matriceCap = copy.deepcopy(matriceCapacite)
     matriceCo = copy.deepcopy(matriceCout)
+    for i in range(n):
+        for j in range(n):
+            if matriceCap[i][j] == 0 and matriceCo[i][j] == 0:
+                matriceCo[i][j] = None
+            
     
     while True:
         chemin, cout = bellman_ford(matriceCo)
@@ -351,12 +339,11 @@ def flotCoutMin(matriceCout, matriceCapacite, flotRecherche):
             matriceCap[u][v] -= flot_chemin
             matriceCap[v][u] += flot_chemin
             if matriceCap[u][v] == 0:
-                matriceCo[u][v] = 0
-
+                matriceCo[u][v] = None
             if matriceCap[v][u] == 0:
-                matriceCo[v][u] = 0
-
-            if matriceCap[v][u] > 0:
+                matriceCo[v][u] = None
+            # Mise à jour de la matrice de coût selon la nouvelle règle
+            if matriceCap[v][u] > 0 and matriceCo[u][v] is not None:
                 matriceCo[v][u] = -matriceCo[u][v]
         
         cout_flot = cout * flot_chemin
@@ -365,10 +352,10 @@ def flotCoutMin(matriceCout, matriceCapacite, flotRecherche):
 
         printt(f"\nFlot trouvé: {flot_chemin} avec coût {cout_flot}")
         printt(f"Flot total actuel: {flot_total} avec coût total {cout_total}")
-        affichage_flot_max(matriceCapacite, matriceCap)
+        #affichage_flot_max(matriceCapacite, matriceCap)
+        printt(matriceCo)
         if flot_total >= flotRecherche:
             printt("Flot recherché atteint ou dépassé, fin de l'algorithme.")
-            
             break
 
 
