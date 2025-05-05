@@ -129,19 +129,23 @@ def affichage_flot_max(matrice_originale, matrice_residuelle):
 
 def FF(matrice):
     n = len(matrice)
-    matrice_residuelle = matrice.copy()  # On travaille sur une copie
+    # On garde une copie de la matrice originale pour le graphe résiduel
+    matrice_residuelle = matrice.copy()  
     flot_total = 0
     
-    while True:  # On continue tant qu'on trouve un chemin
+    while True:  
+        # Phase 1: Recherche d'un chemin augmentant par BFS
         noms = generer_noms_sommets(n)
-        visites = [False] * n
-        precedent = [None] * n
+        visites = [False] * n      # Garde trace des sommets visités
+        precedent = [None] * n     # Pour reconstruire le chemin trouvé
         
+        # Initialisation BFS depuis la source (s)
         file = []
-        file.append(0)
+        file.append(0)  # 0 = sommet source
         visites[0] = True
         printt("\nS")
         
+        # Phase 2: BFS jusqu'à atteindre t ou épuiser tous les chemins
         while file and not visites[n-1]:
             sommet = file.pop(0)
             sommets_visites = []
@@ -199,12 +203,15 @@ def FF(matrice):
 def push_relabel(matrice):
     n = len(matrice)
     residual = matrice.copy()
-    height = [0] * n
-    height[0] = n
-    excess = [0] * n
+    height = [0] * n       # Hauteur des sommets
+    height[0] = n          # Source à hauteur max
+    excess = [0] * n       # Excès de flot en chaque sommet
 
+    # Phase 1: Initialisation - Envoyer tout le flot possible depuis s
     noms = generer_noms_sommets(n)
     printt("\n")
+    
+    # Saturate all edges from source
     for v in range(n):
         if matrice[0][v] > 0:
             flow = matrice[0][v]
@@ -254,11 +261,12 @@ def bellman_ford(matrice_cout):
     n = len(matrice_cout)
     source = 0  # sommet s
 
-    # Initialisation
-    distance = [float('inf')] * n
-    predecesseur = [None] * n
-    distance[source] = 0
+    # Phase 1: Initialisation des distances
+    distance = [float('inf')] * n    # Distance infinie sauf pour la source
+    predecesseur = [None] * n        # Pour reconstruire le chemin
+    distance[source] = 0             # Distance nulle à la source
 
+    # Phase 2: Relaxation des arêtes
     printt("\nExécution de l'algorithme de Bellman-Ford:")
 
     noms_sommets = generer_noms_sommets(n)
@@ -314,12 +322,17 @@ def bellman_ford(matrice_cout):
 
 def flotCoutMin(matriceCout, matriceCapacite, flotRecherche):
     flotRecherche = int(flotRecherche)
-        
-    flot_total = 0
-    cout_total = 0
+    
+    # Initialisation
+    flot_total = 0        # Flot total trouvé
+    cout_total = 0        # Coût total du flot
     n = len(matriceCapacite)
-    matriceCap = copy.deepcopy(matriceCapacite)
-    matriceCo = copy.deepcopy(matriceCout)
+    
+    # Copies de travail pour ne pas modifier les originales
+    matriceCap = copy.deepcopy(matriceCapacite)  # Capacités résiduelles
+    matriceCo = copy.deepcopy(matriceCout)       # Coûts résiduels
+
+    # Nettoyage des arcs inexistants (capactié et coût nuls)
     for i in range(n):
         for j in range(n):
             if matriceCap[i][j] == 0 and matriceCo[i][j] == 0:
@@ -332,6 +345,10 @@ def flotCoutMin(matriceCout, matriceCapacite, flotRecherche):
             printt("Pas de chemin trouvé, flot demandé inatteignable, fin de l'algorithme.\n")
             break
         flot_chemin = min(matriceCap[chemin[i]][chemin[i+1]] for i in range(len(chemin)-1))
+
+        if flot_total + flot_chemin > flotRecherche:
+            flot_chemin = flotRecherche - flot_total
+            printt(f"Flot réduit à {flot_chemin} pour atteindre le flot recherché.")
         for i in range(len(chemin)-1):
             u = chemin[i]
             v = chemin[i+1]
@@ -355,7 +372,7 @@ def flotCoutMin(matriceCout, matriceCapacite, flotRecherche):
         #affichage_flot_max(matriceCapacite, matriceCap)
         printt(matriceCo)
         if flot_total >= flotRecherche:
-            printt("Flot recherché atteint ou dépassé, fin de l'algorithme.")
+            printt("Flot recherché atteint, fin de l'algorithme.")
             break
 
 
